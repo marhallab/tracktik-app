@@ -1,0 +1,46 @@
+.client {
+    &__list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    &__container {
+        display: flex;
+
+        @media screen and (max-width: 1024px) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        border-radius: 5rem;
+        border: 1px solid var(--color-primary);
+        width: 100%;
+        max-width: 500px;
+        display: flex;
+        align-items: center;
+        padding: 1rem;
+        flex: 1 1 calc(50% - 10px);
+        box-sizing: border-box;
+        transition: ease-in 0.2s all;
+
+        &:hover {
+            cursor: pointer;
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+
+            .tag {
+                background-color: var(--color-secondary);
+                color: var(--color-primary);
+            }
+        }
+
+
+        img {
+            margin-right: 0.5rem;
+            border: 1px solid var(--color-secondary);
+        }
+    }
+}
