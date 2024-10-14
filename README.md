@@ -1,7 +1,7 @@
 # Vue 3 + TypeScript + Vite
 
 - Installation:
-  Need to run command: "npm i" followed by "npm run dev" to run the server locally
+  Need to run command: "**npm i**" followed by "**npm run dev**" to run the server locally
 
 - I used vite for the setup with vue 3 and ts
 - I used vue router to manage routes inside of vue
