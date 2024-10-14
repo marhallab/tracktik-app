@@ -79,6 +79,7 @@
               <div
                 class="mt-2 d-flex align-items-center justify-content-center flex-wrap"
                 style="gap: 10px"
+                v-if="response.data[0].images.length > 0"
               >
                 <img
                   v-for="(image, index) in response.data[0].images"
